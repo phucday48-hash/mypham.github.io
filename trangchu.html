@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            background: #ffffff;
+        }
+
+        .wrapper {
+            width: 1000px;
+            margin: auto;
+            background: #7a0019;
+            border: 2px solid #990033;
+        }
+
+        .header {
+            height: 120px;
+            display: flex;
+        }
+
+            .header img {
+                height: 100%;
+            }
+
+        .top-menu {
+            background: #ff7f00;
+            padding: 8px;
+            text-align: center;
+        }
+
+            .top-menu a {
+                color: white;
+                text-decoration: none;
+                margin: 0 8px;
+                font-weight: bold;
+                border-right: 1px solid white;
+                padding-right: 8px;
+                font-size: 13px;
+            }
+
+                .top-menu a:last-child {
+                    border: none;
+                }
+
+        .main {
+            display: flex;
+        }
+
+        .left {
+            width: 220px;
+            padding: 10px;
+        }
+
+        .menu-left {
+            background: #990033;
+            border: 2px solid #cc3366;
+            padding: 5px;
+        }
+
+        .menu-item {
+            margin: 0;
+            padding: 0;
+        }
+
+            .menu-item img {
+                width: 100%;
+                height: auto;
+                display: block;
+                margin-bottom: 5px;
+            }
+
+        .left img.big {
+            width: 100%;
+            margin: 10px 0;
+            border: 2px solid #cc3366;
+        }
+
+        .box {
+            margin-top: 10px;
+        }
+
+            .box input {
+                width: 100%;
+                padding: 5px;
+                margin-bottom: 5px;
+                border: 1px solid #ccc;
+            }
+
+            .box button {
+                width: 100%;
+                background: #cc3300;
+                color: white;
+                border: 2px solid #ff9966;
+                padding: 5px;
+                cursor: pointer;
+            }
+
+        .content {
+            flex: 1;
+            min-height: 400px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 10px;
+            font-size: 12px;
+            position: relative;
+        }
+
+            .footer::before {
+                content: "";
+                display: block;
+                height: 10px;
+                background: radial-gradient(circle, #ff6699 2px, transparent 3px);
+                background-size: 20px 10px;
+                margin-bottom: 5px;
+            }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="header">
+            <img src="Hinh/logo.jpg" style="width:20%">
+            <img src="Hinh/my_pham.gif" style="width:40%">
+            <img src="Hinh/banner.gif" style="width:40%">
+        </div>
+
+        <div class="top-menu">
+            <a href="trangchu.html">TRANG CHỦ</a>
+            <a href="GT.html">GIỚI THIỆU</a>
+            <a href="SP.html">SẢN PHẨM</a>
+            <a href="#">HỎI ĐÁP</a>
+            <a href="#">TƯ VẤN</a>
+            <a href="#">GIỎ HÀNG</a>
+            <a href="#">LIÊN HỆ</a>
+        </div>
+
+        <div class="main">
+
+            <div class="left">
+
+                <div class="menu-left">
+                    <div class="menu-item">
+                        <img src="Hinh/trang_diem.gif">
+                    </div>
+                    <div class="menu-item">
+                        <img src="Hinh/duong_da.gif">
+                    </div>
+                    <div class="menu-item">
+                        <img src="Hinh/nuoc_hoa.gif">
+                    </div>
+                    <div class="menu-item">
+                        <img src="Hinh/duong_toc.gif">
+                    </div>
+                    <div class="menu-item">
+                        <img src="Hinh/duong_the.gif">
+                    </div>
+                    <div class="menu-item">
+                        <img src="Hinh/nam_gioi.gif">
+                    </div>
+                </div>
+
+                <img src="Hinh/tuongtrung.jpg" class="big">
+
+                <div class="box">
+                    <input type="text" placeholder="Tìm kiếm">
+                    <button>Tìm kiếm</button>
+                </div>
+
+                <div class="box">
+                    <p style="color:white; margin-bottom:5px;">Đăng nhập</p>
+                    <input type="text" placeholder="Tên đăng nhập">
+                    <input type="password" placeholder="Mật khẩu">
+                    <button>Đăng nhập</button>
+                </div>
+
+            </div>
+
+            <div class="content"></div>
+
+        </div>
+
+        <div class="footer">
+            Trang web được xây dựng bởi T3H Corp. 2007 ©
+        </div>
+    </div>
+</body>
+</html>

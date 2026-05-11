@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #7a001f;
+            color: #fff;
+        }
+
+        #wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: #4a0014;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: #720822;
+            height: 105px;
+            overflow: hidden;
+        }
+
+            header img {
+                display: block;
+            }
+
+
+                header img:nth-child(3) {
+                    margin-left: auto;
+                }
+
+
+        .top-nav {
+            background-color: #f7941d;
+            border-bottom: 1px solid #fff;
+            height: 30px;
+            line-height: 30px;
+        }
+
+            .top-nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0 10px;
+                display: flex;
+            }
+
+                .top-nav ul li a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 12px;
+                    font-weight: bold;
+                    padding: 0 15px;
+                    border-right: 1px solid white;
+                }
+
+        #main-container {
+            display: flex;
+        }
+
+
+        #sidebar {
+            width: 220px;
+            background-color: #3e0011;
+            padding: 15px;
+            border-right: 1px solid #50001a;
+        }
+
+        .menu-vertical img {
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .input-group {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .input-group input[type="text"], .input-group input[type="password"] {
+                width: 180px;
+                margin-bottom: 5px;
+                border: 1px solid #ccc;
+            }
+
+
+        #content {
+            flex-grow: 1;
+            padding: 30px;
+        }
+
+        .title-page {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+
+        .product-item {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+
+        .img-container {
+            width: 110px;
+            margin-right: 20px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .product-img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product-info {
+            flex: 1;
+        }
+
+            .product-info h3 {
+                margin: 0 0 3px 0;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: normal;
+            }
+
+            .product-info p {
+                margin: 0;
+                line-height: 1.4;
+                font-size: 14px;
+                text-align: left;
+            }
+
+
+
+        footer {
+            background-color: #3e0011;
+            padding: 15px;
+            text-align: center;
+            border-top: 2px solid #50001a;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-text {
+            font-size: 11px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background: #a0002a;
+        }
+
+            .header img {
+                height: 124px;
+                display: block;
+            }
+    </style>
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="header">
+            <img src="Hinh/logo.jpg">
+            <img src="Hinh/my_pham.gif">
+            <img src="Hinh/banner.gif">
+        </div>
+
+        <nav class="top-nav">
+            <ul>
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="GT.html">GIỚI THIỆU</a></li>
+                <li><a href="SP.html">SẢN PHẨM</a></li>
+                <li><a href="#">HỎI ĐÁP</a></li>
+                <li><a href="#">TƯ VẤN</a></li>
+                <li><a href="#">GIỎ HÀNG</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+
+        <div id="main-container">
+            <aside id="sidebar">
+                <div class="menu-vertical">
+                    <img src="Hinh/trang_diem.gif" alt="Trang điểm">
+                    <img src="Hinh/duong_da.gif" alt="Dưỡng da">
+                    <img src="Hinh/nuoc_hoa.gif" alt="Nước hoa">
+                    <img src="Hinh/duong_toc.gif" alt="Dưỡng tóc">
+                    <img src="Hinh/duong_the.gif" alt="Dưỡng thể">
+                    <img src="Hinh/nam_gioi.gif" alt="Nam giới">
+                </div>
+                <div style="margin-top:20px;">
+                    <img src="Hinh/tuongtrung.jpg" width="100%" alt="Model">
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Tìm kiếm...">
+                    <input type="image" src="Hinh/nut_tim_kiem.gif">
+                </div>
+                <div class="input-group">
+                    <label style="font-size:12px; align-self:flex-start; margin-left:10px;">Đăng nhập</label>
+                    <input type="text">
+                    <label style="font-size:12px; align-self:flex-start; margin-left:10px;">Mật khẩu</label>
+                    <input type="password">
+                    <input type="image" src="Hinh/nut_tim_kiem.gif">
+                </div>
+            </aside>
+
+            <section id="content">
+                <div class="title-page">Các Sản Phẩm</div>
+
+                <div class="product-item">
+                    <div class="img-container">
+                        <img src="Hinh/sp1.jpg" alt="Bộ dưỡng da" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Các bộ dưỡng da cao cấp</h3>
+                        <p>Nhờ thành phần chiết xuất từ thiên nhiên, sử dụng những bộ dưỡng da cao cấp là phương pháp dưỡng da tối ưu nhất giúp giảm sự lão hoá và bảo vệ cho da.</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="img-container">
+                        <img src="Hinh/sp2.jpg" alt="Mặt nạ" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Các loại mặt nạ</h3>
+                        <p>Khi sử dụng các bộ dưỡng da nên dùng kèm theo 1 loại mặt nạ phù hợp với da bởi mặt nạ sẽ giúp làm sạch sâu, giúp bổ sung thêm chất nuôi dưỡng da, giúp tăng tính đàn hồi săn chắc cho da.</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="img-container">
+                        <img src="Hinh/sp3.jpg" alt="Mỹ phẩm đặc trị" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>Các loại mỹ phẩm cao cấp đặc trị</h3>
+                        <p>Điều mà mọi người mong muốn là được trang điểm đẹp song trang điểm luôn phải được ý thức là có hai mục đích: làm đẹp và bảo vệ da.</p>
+                    </div>
+                </div>
+
+                <div class="product-item">
+                    <div class="img-container">
+                        <img src="Hinh/sp4.jpg" alt="AHA 22.000" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3>AHA 22.000 (Essence dạng đặc trị):</h3>
+                        <p>Là tinh dầu thực vật dạng đặc trị, với thành phần dinh dưỡng ưu tú đây là sản phẩm có khả năng ưu tú nuôi dưỡng tế bào da, tác động mạnh đến quá trình cấu tạo tế bào da, giảm sự phát sinh nếp nhăn, xóa đi các vết thâm (do trứng cá để lại) và giảm hiện trạng phát sinh nám trên da, giảm sự phát sinh trứng cá trên da.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                <img src="Hinh/vien_01.gif" alt="dot left">
+                <span class="footer-text">Trang web được xây dựng bởi T3H Corp, 2007 ©</span>
+                <img src="Hinh/vien_02.gif" alt="dot right">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
